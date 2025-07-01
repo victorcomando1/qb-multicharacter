@@ -40,7 +40,7 @@
                                 <!-- For character slots with data -->
                                 <template v-if="characters[index]">
                                     <!-- Top section - Action buttons -->
-                                    <div class="character-actions">
+                                    <div v-if="selectedCharacter == index" class="character-actions">
                                         <div class="action-btn play-btn" @click.stop="play_character">
                                             <span class="material-symbols-outlined">play_circle</span>
                                         </div>

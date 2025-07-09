@@ -2,11 +2,13 @@
 Multi Character Feature for QB-Core Framework :people_holding_hands:
 
 **PT-BR:**  
-Este fork foi criado para corrigir um problema comum onde jogadores enfrentavam **tela preta ao entrar no servidor**. A correção ajusta o momento em que o personagem é carregado, evitando conflitos entre eventos `playerSpawned` e o carregamento do personagem.  
+Este fork foi criado para corrigir um problema comum onde jogadores enfrentavam **tela preta ao entrar no servidor**.  
+A correção foi aplicada diretamente no arquivo `client/main.lua`, ajustando o momento em que o personagem é carregado para evitar conflitos entre eventos `playerSpawned` e o carregamento completo do personagem.  
 Além disso, o fork mantém o suporte à definição padrão do número de personagens por jogador, com base na licença Rockstar.
 
 **EN:**  
-This fork was created to fix a common issue where players were experiencing a **black screen when joining the server**. The fix adjusts the timing of character loading to avoid conflicts between `playerSpawned` events and character initialization.  
+This fork was created to fix a common issue where players were experiencing a **black screen when joining the server**.  
+The fix was applied directly in the `client/main.lua` file, adjusting the timing of character loading to prevent conflicts between the `playerSpawned` event and full character initialization.  
 In addition, the fork retains support for setting the default number of characters per player based on their Rockstar license.
 
 ---
